@@ -1,0 +1,157 @@
+.face{
+    border: 2px solid hotpink;
+    background-color:hotpink;
+    height: 75px;
+    width: 100px;
+    border-radius: 50px 50px 0px 0px;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 90px;
+}
+.body{
+    border: 2px solid hotpink;
+    background-color:hotpink;
+    height: 100px;
+    width: 100px;
+    border-radius: 0px 0px 20px 20px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 90px;
+
+}
+ .leye{ 
+    height: 10px;
+    width: 10px;
+    background-color:whitesmoke;
+    margin-left: 70px;
+    margin-top: 40px;
+    margin-right: 50px;
+    position: absolute;
+    border-radius: 100%;
+}    
+.reye{
+    height: 10px;
+    width: 10px;
+    background-color:whitesmoke;
+    margin-right: 90px;
+    margin-top: 40px;
+    margin-left:20px ;
+    position: absolute;
+    border-radius: 100%;
+}  
+
+.lhand{
+    position: absolute;
+    display: flex;
+    width: 80px;
+    height: 25px;
+    top: 30px;
+    margin-left: 80px;
+    border-radius: 40px 38px 40px 40px;
+    transform:translateX(-50%);
+    background-color:hotpink;
+    transform: rotate(89deg);
+}
+.rhand{
+    position: absolute;
+    display: flex;
+    width: 80px;
+    height: 25px;
+    top: 30px;
+    margin-left: -60px;
+    border-radius: 40px 38px 40px 40px;
+    transform:translateX(-50%);
+    background-color:hotpink;
+    transform: rotate(89deg);
+}
+.lleg{
+    position: relative;
+    width: 25px;
+    height: 66px;
+    top: -74px;
+    border-radius: 10px 10px 10px 10px;
+    background-color:hotpink;
+    right: -19px;
+
+    
+}
+.rleg{
+    position: relative;
+    width: 25px;
+    height: 65px;
+    top: -9px;
+    border-radius: 10px 10px 10px 10px;
+    background-color:hotpink;
+    right: -70px;
+
+    
+}
+ 
+ .container:hover{ 
+    background-color: royalblue;
+    transform: scale(1);
+}
+.reye:hover{
+    transform: scale(1);
+    overflow: visible;
+}
+.leye:hover{
+    transform: scale(1);
+    overflow: visible;
+} 
+.eye:hover{
+    
+    transform: skew(20deg);
+} 
+.container:hover.face,.body{
+    animation: container 2s infinite;
+
+}  
+@keyframes container{
+    0%{
+    
+        transform: rotate(30deg);
+    }
+    25%{
+       
+        transform: rotate(25deg);
+    }
+    50%{
+    
+        transform: rotate(5deg);
+    }
+    75%{
+       
+        transform: rotate(15deg);
+    }
+    100%{
+       
+        transform: rotate(15deg);
+    }
+}
+.container:hover.face,.body,.face{
+    background-color: pink;
+    animation: container 2s infinite;
+}
+@keyframes container{
+    0%{
+        background-color: antiquewhite;
+        transform: rotate(9deg);
+    }
+    25%{
+        background-color: green;
+        transform: rotate(-10deg);
+    }
+    50%{
+        background-color: blue;
+        transform: rotate(25deg);
+    }
+    75%{
+        background-color: blueviolet;
+        transform: rotate(30deg);
+    }
+    100%{
+        background-color: brown;
+        transform: rotate(10deg);
+    }
+}
